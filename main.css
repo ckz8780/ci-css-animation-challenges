@@ -2,7 +2,7 @@ html, body {
     font-family: 'Oswald', sans-serif;
 }
 
-.box, .ch2box, a {
+.indent {
     margin-left: 35px;
 }
 
@@ -66,7 +66,6 @@ a:hover {
     background-color: #000;
     width: 150px;
     height: 0;
-    margin: 25px;
     animation-name: growing;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
@@ -86,7 +85,7 @@ a:hover {
 
 /* CHALLENGE 3 */
 #ch3 {
-    height: 350px;
+    height: 250px;
 }
 
 .ch3box {
@@ -95,7 +94,6 @@ a:hover {
     border-radius:50%;
     width: 100px;
     height: 100px;
-    margin: 25px;
     top: 0px;
     animation-name: jump;
     animation-duration: .5s;
@@ -112,4 +110,44 @@ a:hover {
     to {
         top: 100px;
     }
+}
+
+/* EXAMPLE 3 */
+#ex3 {
+    height: 300px;
+}
+
+.ex3box {
+    width: 100px;
+    height: 100px;
+    background-color: #e84610;
+    transform: translate(0px, 0px);
+    animation: swap;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes swap {
+    from {
+        transform: translate(0px, 0px);
+    }
+    to {
+        transform: translate(100px, 100px);
+    }
+}
+
+/* CHALLENGE 4 */
+#ch4img {
+    position: relative;
+    transform-origin: top left;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+#ch4img:hover {
+    transform: scale(2.0);
 }
