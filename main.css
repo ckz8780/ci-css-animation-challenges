@@ -1,0 +1,59 @@
+html, body {
+    font-family: 'Oswald', sans-serif;
+}
+
+.box, .ch2box, a {
+    margin-left: 35px;
+}
+
+/* EXAMPLE 1 */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #b4da55;
+    transition-property: width, background-color;
+    transition-duration: 2s;
+    text-align: center;
+}
+
+.box:hover {
+    width: 300px;
+    background-color: #e84610;
+}
+
+#hovertext {
+    padding-top: 35px;
+}
+
+/* CHALLENGE 1 */
+
+a {
+    color: red;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+a:hover {
+    color: #000;
+}
+
+/* CHALLENGE 2 */
+.ch2box {
+    width: 150px;
+    height: 150px;
+    background-color: #79797f;
+    transition-property: background-color;
+    transition-delay: 1s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    text-align: center;
+}
+
+.ch2box:hover {
+    background-color: #e84610;
+}
+
+#ch2box-hovertext {
+    padding-top: 50px;
+}
