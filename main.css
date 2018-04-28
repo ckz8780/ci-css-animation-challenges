@@ -59,7 +59,7 @@ a:hover {
 
 /* EXAMPLE 2 */
 #ex2 {
-    height: 200px;
+    height: 225px;
 }
 
 .ex2box {
@@ -85,7 +85,7 @@ a:hover {
 
 /* CHALLENGE 3 */
 #ch3 {
-    height: 250px;
+    height: 275px;
 }
 
 .ch3box {
@@ -140,8 +140,13 @@ a:hover {
 }
 
 /* CHALLENGE 4 */
+#ch4 {
+    height: 490px;
+}
+
 #ch4img {
-    position: relative;
+    border: 1px solid black;
+    border-radius: 5px;
     transform-origin: top left;
     transition-property: transform;
     transition-duration: 1s;
@@ -150,4 +155,28 @@ a:hover {
 
 #ch4img:hover {
     transform: scale(2.0);
+}
+
+/* CHALLENGE 5 */
+#ch5 {
+    height: 350px;
+}
+
+#ch5img {
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    animation: spin;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
