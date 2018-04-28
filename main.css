@@ -26,7 +26,6 @@ html, body {
 }
 
 /* CHALLENGE 1 */
-
 a {
     color: red;
     transition-property: color;
@@ -56,4 +55,61 @@ a:hover {
 
 #ch2box-hovertext {
     padding-top: 50px;
+}
+
+/* EXAMPLE 2 */
+#ex2 {
+    height: 200px;
+}
+
+.ex2box {
+    background-color: #000;
+    width: 150px;
+    height: 0;
+    margin: 25px;
+    animation-name: growing;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes growing {
+    from {
+        height: 0;
+    }
+    to {
+        height: 150px;
+    }
+}
+
+/* CHALLENGE 3 */
+#ch3 {
+    height: 350px;
+}
+
+.ch3box {
+    position: relative;
+    background-color: #0799d3;
+    border-radius:50%;
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    top: 0px;
+    animation-name: jump;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes jump {
+    from {
+        top: 0;
+    }
+    to {
+        top: 100px;
+    }
 }
