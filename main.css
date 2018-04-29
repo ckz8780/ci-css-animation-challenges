@@ -180,3 +180,23 @@ a:hover {
         transform: rotate(360deg);
     }
 }
+
+
+
+/* CHALLENGE 6 */
+#ch6box-hovertext {
+    padding-top: 90px;
+}
+.element {
+	background-color: #0997d3;
+	width: 200px;
+	height: 200px;
+	transition: transform;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
+	text-align: center;
+}
+
+.element:hover {
+	transform: translateX(100%);
+}
